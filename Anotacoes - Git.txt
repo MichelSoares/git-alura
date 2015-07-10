@@ -77,7 +77,23 @@ git whatchanged - permite verificar quais arquivos foram alterados por cada comm
 
 git whatchanged -p  - permite visualizar detalhes de todos os arquivos alterados por cada commit realizado.
 
+
+git remote - esse comando mostra todos os repositorios remotos que possuo no GitHub.
+
+
+git remote add <exemplo-repositorio>  https://github.com/MichelSoares/git-alura.git - esse comando serve para integrar repositorio locais
+com um repositorio remoto.
+
+
+git push <name repositorio remoto> <name branch>: exemplo - git push origin master - esse comando manda as alterações
+realizadas para o repositorio remoto.
+
  
+
+
+
+
+
  
 
 
