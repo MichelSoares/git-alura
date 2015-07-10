@@ -1,0 +1,134 @@
+conta GitHub
+
+michel_soares@outlook.com
+mitzero0
+
+
+Curso Git: Trabalho em Equipe com Controle e Segurança
+
+Git: É uma tecnologia de versiornamento de dados usado para facilitar, por exemplo, o desenvolvimento
+de um projeto de software onde por sua vez temos diversas pessoas trabalhando em equipe, muitas vezes
+alterando um mesmo arquivo simultâneamente. Com o uso correto do Git temos a certeza que as partes do projeto
+desenvolvidas por cada pessoa da equipe integra-se entre si fazendo que cada integrante da equipe tenha sempre
+uma versão atualizada do arquivo. 
+
+
+Instalação do GIT - 
+
+Muito simples instalar!
+
+
+O git fornece um repositorio de codigo fonte na web grátis para projetos publicos (GitHub),
+ou seja, o GitHub é uma plataforma online de repositorios;
+
+
+INTEGRAÇÃO COM GITHUB:
+
+Depois de criada nossa conta no GitHub, precisamos gerar uma senha (chave de segurança) que será responsável por identificar 
+nossa máquina quando fizermos as interações entre nosso projeto e o serviço do Github. Caso não exista essa configuração 
+entre nossa máquina e a conta do Github, o acesso ao serviço pelos comandos do Git será negado.
+
+No Windows (Git Bash)
+
+ssh-keygen -t rsa -C "seu_email@hotmail.com"
+
+
+com esse comando geramos nossa chave publica/privada para realizamos operações especificas no GitHub.
+
+
+Enter- para não alterarmos o local que o mesmo salvará a chaves (geralmente salvo no diretorio com nome do Usuario na pasta .ssh)
+Enter- para não atribuimos uma senha para abrir nossa chave public/private.
+
+
+Agora no site do GitHub em Settings> SSH keys> ADD SSH key> title (titulo da chave) abaixo a chave propriamente dito (id_rsa.pub).
+
+
+
+***********************************************C  O  M  A  N  D  O  S************************************************************
+
+
+git clone git : - Esse comando clone criará uma pasta com o mesmo nome padrão do repositório.
+
+
+git tag -  Visualizamos todas as tags (versões do software) criadas.
+
+
+git checkout v0.1 - retornamos a um uma versão anterior do projeto.
+
+
+git diff v0.1 v0.2 - esse comando permiti visualizar as alterações realizadas da versão v0.1 para v0.2.
+
+
+git blame <nome_arquivo.extensao> - podemos visualiza quem alterou os arquivo recetemente.
+
+
+git init - esse comando inicializar um repositorio no diretorio especificado.
+
+
+git add <file name> - esse comando nos permite adicionar um arquivo para lista do git, de arquivos rastreados,
+		      monitorados pelo mesmo.
+
+
+git commit -m "exemplo" - esse comando cria um commit do nosso projeto. OBS.: sempre é preciso passa uma mensagem para identificação.
+
+
+git whatchanged - permite verificar quais arquivos foram alterados por cada commit realizado.
+
+
+git whatchanged -p  - permite visualizar detalhes de todos os arquivos alterados por cada commit realizado.
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+   
+
