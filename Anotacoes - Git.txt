@@ -44,6 +44,49 @@ Agora no site do GitHub em Settings> SSH keys> ADD SSH key> title (titulo da cha
 
 
 
+
+
+
+
+
+
+************************C R I A N D O   E   I N T E R A G I N D O   C O M   R E P O S I T O R I O   R E M O T O*********************************
+
+
+
+
+
+
+Um repositório remoto nada mais é do que um "espelho" do nosso repositorio local.
+
+Quando executamos o comando git init - estamos inicializando um repositório em determinado diretorio, porem
+a principio ele é somente LOCAL.
+
+COMO INTERAGIR COM UM REPOSITORIO REMOTO:
+
+
+1) criamos um novo repositorio no GITHUB por padrão com o mesmo nome do projeto.
+
+copiamos um endereço HTTP.
+
+2) No GitBash - 
+
+	git remote add <exemplo-repositorio>  https://github.com/MichelSoares/git-alura.git - esse comando serve para integrar repositorio locais
+	com um repositorio remoto.
+
+3) Mandando as alterações dos meus COMMIT'S para o repositorio remoto:
+	
+	git push <nome repositorio> <branch>	
+	
+
+
+
+
+
+ 
+
+
+
 ***********************************************C  O  M  A  N  D  O  S************************************************************
 
 
@@ -67,6 +110,23 @@ git init - esse comando inicializar um repositorio no diretorio especificado.
 
 git add <file name> - esse comando nos permite adicionar um arquivo para lista do git, de arquivos rastreados,
 		      monitorados pelo mesmo.
+
+	podemos adicionar varios arquivos ao mesmo tempo
+
+	sendo:
+
+	git add <file name> <file name> (...)
+
+	ou
+
+	git add *.xhtml
+
+	para todos os arquivos na pasta que tenha o formato .xhtml
+
+
+	git add nomePasta/
+
+	adicionando todos os arquivos de um diretório especificado.
 
 
 git commit -m "exemplo" - esse comando cria um commit do nosso projeto. OBS.: sempre é preciso passa uma mensagem para identificação.
