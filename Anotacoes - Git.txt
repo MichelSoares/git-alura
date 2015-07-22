@@ -13,7 +13,7 @@ desenvolvidas por cada pessoa da equipe integra-se entre si fazendo que cada int
 uma versão atualizada do arquivo. 
 
 
-Instalação do GIT - 
+Instalação do GIT -  
 
 Muito simples instalar!
 
@@ -83,12 +83,12 @@ copiamos um endereço HTTP.
 Conceitos do BRANCH:
 
 
-Branch é basicamente uma linha de produção sendo a principal por default - MASTER, onde o sistema está rodando.
+Branch é basicamente uma linha de produção sendo a principal por default a MASTER, onde o sistema está rodando.
 
 Quando trabalhamos em equipe temos diversas pessoas modificando vários arquivos no projeto, muitas vezes
 o mesmo arquivo simultâneamente, agora imagine se ambas realiza-se o commit no repositorio em uma BRANCH 
 ao mesmo tempo e ainda mais com o sistema em produção, ocorreria um erro! Para evitarmos o ocorrido geralmente
-trabalhamos com BRANCH'S secundárias paralela ao BRANCH principal.
+trabalhamos com BRANCH'S secundárias paralela (bifurcação) ao BRANCH principal.
 
 
 git branch - esse comando mostra as branchs 
@@ -96,6 +96,10 @@ git branch - esse comando mostra as branchs
 git branch nomebranch - criando um Branch.
 
 git checkout nomebranch	- trocando de branch. 
+
+git pull
+
+
 	
 
 
