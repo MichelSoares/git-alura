@@ -46,10 +46,6 @@ Agora no site do GitHub em Settings> SSH keys> ADD SSH key> title (titulo da cha
 
 
 
-
-
-
-
 ************************C R I A N D O   E   I N T E R A G I N D O   C O M   R E P O S I T O R I O   R E M O T O*********************************
 
 
@@ -88,7 +84,7 @@ Branch é basicamente uma linha de produção sendo a principal por default a MASTE
 Quando trabalhamos em equipe temos diversas pessoas modificando vários arquivos no projeto, muitas vezes
 o mesmo arquivo simultâneamente, agora imagine se ambas realiza-se o commit no repositorio em uma BRANCH 
 ao mesmo tempo e ainda mais com o sistema em produção, ocorreria um erro! Para evitarmos o ocorrido geralmente
-trabalhamos com BRANCH'S secundárias paralela (bifurcação) ao BRANCH principal.
+trabalhamos com BRANCH'S secundárias, paralela uma bifurcação referente a BRANCH principal.
 
 
 git branch - esse comando mostra as branchs 
@@ -120,26 +116,36 @@ git checkout nomebranch	- trocando de branch.
 	git push <nome repositorio>:<nome branch> - deletando uma branch remota.
 
 	
-	git fetch <nome repositorio> - Verificando as atualizações do repositorio citado.
+	git fetch <nome repositorio> - Verificando as atualizações do repositorio citado.verificamos a possível criação 
+	de novas branchs.
 	
 
 
-git push <nome repositorio> <branch>: passando minha nova branch local para meu repoditório remoto.
+	git push <nome repositorio> <branch>: passando minha nova branch local para meu repoditório remoto.
 
-Para evitar tal trabalho, podemos indicar o caminho (track) da branch remota para a nossa branch local.
-Isso pode ser feito no instante em que criamos a branch remota através da opção "-u". No nosso caso, temos:
+	Para evitar tal trabalho, podemos indicar o caminho (track) da branch remota para a nossa branch local.
+	Isso pode ser feito no instante em que criamos a branch remota através da opção "-u". No nosso caso, temos:
 
-git push -u origin design
+	git push -u origin design
+
+
+	git merge <nome branch>: Salva meus commits da minha branch AUXILIAR na branch MASTER (Principal)
+
+
+
+***********************************R E S O L U Ç Õ E S   D E   C O N F L I T O S*************************************************
+
+
+E QUANDO EM UM PROJETO DIVERSAS PESSOAS ESTÃO ALTERANDO UM MESMO ARQUIVO AO MESMO TEMPO.
+QUEM IRÁ COMMITAR O PROJETO PRIMEIRO? CASO COMMITA COMO SABEREI QUE O MESMO JÁ ESTARÁ
+ATUALIZADO COM AS MODIFICAÇÕES DOS OUTROS DESENVOLVEDORES.
+
+
+Uma abordagem possível é permitir que vários desenvolvedores manipulem o mesmo arquivo ao mesmo tempo.
+No entanto, o envio do arquivo para o repositório só pode ser feito se o desenvolvedor que deseja enviá-lo
+estiver devidamente sincronizado (atualizado) com o repositório. Essa é justamente a maneira seguida pelo Git.
 
 	
-
-
-
-
-
-
- 
-
 
 
 ***********************************************C  O  M  A  N  D  O  S************************************************************
